@@ -208,87 +208,72 @@ def delete_student(ma_sv: str, db: Session = Depends(get_db)):
     return {"message": "deleted"}
 
 
-# ================= GRADES =================
 @app.get("/grades")
 def get_grades(db: Session = Depends(get_db)):
-    grades = (
-        db.query(BangDiem, HocPhan, SinhVien)
-        .join(HocPhan, BangDiem.ma_hp == HocPhan.MaHocPhan)
-        .join(SinhVien, BangDiem.ma_sv == SinhVien.ma_sv)
-        .all()
-    )
+    try:
+        grades = (
+            db.query(BangDiem, HocPhan, SinhVien)
+            .join(HocPhan, BangDiem.ma_hp == HocPhan.MaHocPhan)
+            .join(SinhVien, BangDiem.ma_sv == SinhVien.ma_sv)
+            .all()
+        )
 
-    return [
-        {
-            "ma_sv": sv.ma_sv,
-            "ho_ten": sv.ho_ten,
-            "ma_hp": hp.MaHocPhan,
-            "ten_hp": hp.TenHocPhan,
-            "diem_tk": bd.diem_tk,
-            "diem_chu": bd.diem_chu
-        }
-        for bd, hp, sv in grades
-    ]
+        return [
+            {
+                "studentId": sv.ma_sv,
+                "courseId": hp.MaHocPhan,
 
+                "grade": bd.diem_tk,
+                "status": "completed" if bd.diem_tk and bd.diem_tk >= 5 else "failed",
 
+                "student": {
+                    "name": sv.ho_ten,
+                    "code": sv.ma_so,
+                },
+
+                "course": {
+                    "code": hp.MaHocPhan,
+                    "name": hp.TenHocPhan,
+                }
+            }
+            for bd, hp, sv in grades
+        ]
+
+    except Exception as e:
+        print("ERROR GET GRADES:", e)
+        raise HTTPException(status_code=500, detail="Lỗi lấy dữ liệu")
+    
 @app.post("/grades")
 def add_grade(data: dict, db: Session = Depends(get_db)):
+    try:
+        exists = db.query(BangDiem).filter(
+            BangDiem.ma_sv == data["ma_sv"],
+            BangDiem.ma_hp == data["ma_hp"]
+        ).first()
 
-    # check tồn tại
-    exists = db.query(BangDiem).filter(
-        BangDiem.ma_sv == data["ma_sv"],
-        BangDiem.ma_hp == data["ma_hp"]
-    ).first()
+        if exists:
+            raise HTTPException(status_code=400, detail="Grade already exists")
 
-    if exists:
-        raise HTTPException(status_code=400, detail="Grade already exists")
+        grade = BangDiem(
+            ma_sv=data["ma_sv"],
+            ma_hp=data["ma_hp"],
+            diem_qt=data.get("diem_qt"),
+            diem_gk=data.get("diem_gk"),
+            diem_ck=data.get("diem_ck"),
+            diem_tk=data.get("diem_tk"),
+            diem_chu=data.get("diem_chu")
+        )
 
-    grade = BangDiem(
-        ma_sv=data["ma_sv"],
-        ma_hp=data["ma_hp"],
-        diem_qt=data["diem_qt"],
-        diem_gk=data["diem_gk"],
-        diem_ck=data["diem_ck"],
-        diem_tk=data["diem_tk"],
-        diem_chu=data["diem_chu"]
-    )
+        db.add(grade)
+        db.commit()
 
-    db.add(grade)
-    db.commit()
+        return {"message": "added"}
 
-    return {"message": "added"}
-
-@app.get("/grades")
-def get_grades(db: Session = Depends(get_db)):
-    grades = (
-        db.query(BangDiem, HocPhan, SinhVien)
-        .join(HocPhan, BangDiem.ma_hp == HocPhan.MaHocPhan)
-        .join(SinhVien, BangDiem.ma_sv == SinhVien.ma_sv)
-        .all()
-    )
-
-    return [
-        {
-            # ✅ FE cần
-            "studentId": sv.ma_sv,
-            "courseId": hp.MaHocPhan,
-
-            "grade": bd.diem_tk,
-            "status": "completed" if bd.diem_tk and bd.diem_tk >= 5 else "failed",
-            "semester": "N/A",  # nếu chưa có thì để tạm
-
-            "student": {
-                "name": sv.ho_ten,
-                "code": sv.ma_so,
-            },
-
-            "course": {
-                "code": hp.MaHocPhan,
-                "name": hp.TenHocPhan,
-            }
-        }
-        for bd, hp, sv in grades
-    ]
+    except Exception as e:
+        print("ERROR ADD:", e)
+        raise HTTPException(status_code=500, detail="Lỗi thêm điểm")
+    
+    from pydantic import BaseModel
 
 class UpdateGradeRequest(BaseModel):
     ma_sv: str
@@ -298,27 +283,32 @@ class UpdateGradeRequest(BaseModel):
 
 @app.put("/grades")
 def update_grade(data: UpdateGradeRequest, db: Session = Depends(get_db)):
-    record = db.query(BangDiem).filter(
-        BangDiem.ma_sv == data.ma_sv,
-        BangDiem.ma_hp == data.ma_hp
-    ).first()
+    try:
+        record = db.query(BangDiem).filter(
+            BangDiem.ma_sv == data.ma_sv,
+            BangDiem.ma_hp == data.ma_hp
+        ).first()
 
-    if not record:
-        raise HTTPException(status_code=404, detail="Không tìm thấy bản ghi")
+        if not record:
+            raise HTTPException(status_code=404, detail="Không tìm thấy bản ghi")
 
-    record.diem_tk = data.diem_tk
+        record.diem_tk = data.diem_tk
 
-    # 👉 tự tính điểm chữ (nếu bạn muốn)
-    if data.diem_tk >= 8.5:
-        record.diem_chu = "A"
-    elif data.diem_tk >= 7:
-        record.diem_chu = "B"
-    elif data.diem_tk >= 5:
-        record.diem_chu = "C"
-    else:
-        record.diem_chu = "F"
+        # auto tính điểm chữ
+        if data.diem_tk >= 8.5:
+            record.diem_chu = "A"
+        elif data.diem_tk >= 7:
+            record.diem_chu = "B"
+        elif data.diem_tk >= 5:
+            record.diem_chu = "C"
+        else:
+            record.diem_chu = "F"
 
-    db.commit()
-    db.refresh(record)
+        db.commit()
+        db.refresh(record)
 
-    return {"message": "updated"}
+        return {"message": "updated"}
+
+    except Exception as e:
+        print("ERROR UPDATE:", e)
+        raise HTTPException(status_code=500, detail="Lỗi cập nhật điểm")
