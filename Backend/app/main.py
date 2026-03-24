@@ -312,3 +312,21 @@ def update_grade(data: UpdateGradeRequest, db: Session = Depends(get_db)):
     except Exception as e:
         print("ERROR UPDATE:", e)
         raise HTTPException(status_code=500, detail="Lỗi cập nhật điểm")
+
+@app.get("/debug")
+def debug(db: Session = Depends(get_db)):
+    return {
+        "bangdiem": db.query(BangDiem).count(),
+        "sinhvien": db.query(SinhVien).count(),
+        "hocphan": db.query(HocPhan).count(),
+    }
+
+@app.get("/debug-join")
+def debug_join(db: Session = Depends(get_db)):
+    sample_bd = db.query(BangDiem).first()
+    sample_hp = db.query(HocPhan).first()
+
+    return {
+        "BangDiem.ma_hp": sample_bd.ma_hp,
+        "HocPhan.MaHocPhan": sample_hp.MaHocPhan
+    }

@@ -26,65 +26,32 @@ def seed():
     # ================= HOCPHAN =================
 
     hocphan = [
-        # CNTT
-        HocPhan(IDHocPhan="HP_CN01",MaHocPhan="CNTT101",TenHocPhan="Nhập môn lập trình",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN02",MaHocPhan="CNTT102",TenHocPhan="Toán rời rạc",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN03",MaHocPhan="CNTT103",TenHocPhan="Giải tích",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN04",MaHocPhan="CNTT201",TenHocPhan="Cấu trúc dữ liệu & Giải thuật",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN05",MaHocPhan="CNTT202",TenHocPhan="Lập trình hướng đối tượng",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN06",MaHocPhan="CNTT301",TenHocPhan="Cơ sở dữ liệu",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN07",MaHocPhan="CNTT302",TenHocPhan="Mạng máy tính",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN08",MaHocPhan="CNTT303",TenHocPhan="Hệ điều hành",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN09",MaHocPhan="CNTT401",TenHocPhan="Phát triển ứng dụng web",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG01"),
-        HocPhan(IDHocPhan="HP_CN10",MaHocPhan="CNTT402",TenHocPhan="Trí tuệ nhân tạo",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG01"),
+    # CNTT
+    HocPhan(IDHocPhan="HP_CN01", MaHocPhan="INT1", TenHocPhan="Nhập môn lập trình", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG01"),
+    HocPhan(IDHocPhan="HP_CN02", MaHocPhan="INT2", TenHocPhan="Toán rời rạc", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG01"),
+    HocPhan(IDHocPhan="HP_CN03", MaHocPhan="INT3", TenHocPhan="Giải tích", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG01"),
+    HocPhan(IDHocPhan="HP_CN04", MaHocPhan="INT4", TenHocPhan="Cấu trúc dữ liệu & Giải thuật", SoTinChi=3, HocKyDeXuat=2, IDNganh="NG01"),
 
-        # KTPM
-        HocPhan(IDHocPhan="HP_KT01",MaHocPhan="KTPM101",TenHocPhan="Nhập môn công nghệ phần mềm",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT02",MaHocPhan="KTPM102",TenHocPhan="Lập trình cơ bản",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT03",MaHocPhan="KTPM103",TenHocPhan="Toán cho CNPM",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT04",MaHocPhan="KTPM201",TenHocPhan="Phân tích & thiết kế hệ thống",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT05",MaHocPhan="KTPM202",TenHocPhan="Lập trình hướng đối tượng",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT06",MaHocPhan="KTPM301",TenHocPhan="Kiểm thử phần mềm",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT07",MaHocPhan="KTPM302",TenHocPhan="Quản lý dự án phần mềm",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT08",MaHocPhan="KTPM401",TenHocPhan="DevOps & CI/CD",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG02"),
-        HocPhan(IDHocPhan="HP_KT09",MaHocPhan="KTPM402",TenHocPhan="Kiến trúc phần mềm",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG02"),
+    # KTPM
+    HocPhan(IDHocPhan="HP_KT01", MaHocPhan="INT5", TenHocPhan="Nhập môn công nghệ phần mềm", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG02"),
+    HocPhan(IDHocPhan="HP_KT02", MaHocPhan="INT6", TenHocPhan="Lập trình cơ bản", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG02"),
+    HocPhan(IDHocPhan="HP_KT03", MaHocPhan="INT7", TenHocPhan="Toán cho CNPM", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG02"),
 
-        # KHMT
-        HocPhan(IDHocPhan="HP_KH01",MaHocPhan="KHMT101",TenHocPhan="Nhập môn khoa học máy tính",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH02",MaHocPhan="KHMT102",TenHocPhan="Toán rời rạc nâng cao",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH03",MaHocPhan="KHMT103",TenHocPhan="Đại số tuyến tính",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH04",MaHocPhan="KHMT201",TenHocPhan="Thuật toán & độ phức tạp",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH05",MaHocPhan="KHMT202",TenHocPhan="Lý thuyết tính toán",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH06",MaHocPhan="KHMT301",TenHocPhan="Học máy",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH07",MaHocPhan="KHMT302",TenHocPhan="Thị giác máy tính",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH08",MaHocPhan="KHMT401",TenHocPhan="Xử lý ngôn ngữ tự nhiên",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG03"),
-        HocPhan(IDHocPhan="HP_KH09",MaHocPhan="KHMT402",TenHocPhan="Tính toán song song",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG03"),
+    # KHMT
+    HocPhan(IDHocPhan="HP_KH01", MaHocPhan="INT8", TenHocPhan="Nhập môn khoa học máy tính", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG03"),
+    HocPhan(IDHocPhan="HP_KH02", MaHocPhan="INT9", TenHocPhan="Toán rời rạc nâng cao", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG03"),
 
-        # HTTT
-        HocPhan(IDHocPhan="HP_HT01",MaHocPhan="HTTT101",TenHocPhan="Nhập môn hệ thống thông tin",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT02",MaHocPhan="HTTT102",TenHocPhan="Tin học văn phòng nâng cao",SoTinChi=2,HocKyDeXuat=1,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT03",MaHocPhan="HTTT103",TenHocPhan="Kinh tế học đại cương",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT04",MaHocPhan="HTTT201",TenHocPhan="Phân tích nghiệp vụ",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT05",MaHocPhan="HTTT202",TenHocPhan="Cơ sở dữ liệu doanh nghiệp",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT06",MaHocPhan="HTTT301",TenHocPhan="ERP & hệ thống quản lý",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT07",MaHocPhan="HTTT302",TenHocPhan="Khai phá dữ liệu",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT08",MaHocPhan="HTTT401",TenHocPhan="Thương mại điện tử",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG04"),
-        HocPhan(IDHocPhan="HP_HT09",MaHocPhan="HTTT402",TenHocPhan="Quản trị hệ thống thông tin",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG04"),
+    # HTTT
+    HocPhan(IDHocPhan="HP_HT01", MaHocPhan="INT10", TenHocPhan="Nhập môn hệ thống thông tin", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG04"),
+    HocPhan(IDHocPhan="HP_HT02", MaHocPhan="INT11", TenHocPhan="Tin học văn phòng nâng cao", SoTinChi=2, HocKyDeXuat=1, IDNganh="NG04"),
 
-        # ATTT
-        HocPhan(IDHocPhan="HP_AT01",MaHocPhan="ATTT101",TenHocPhan="Nhập môn an toàn thông tin",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT02",MaHocPhan="ATTT102",TenHocPhan="Lập trình C/C++",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT03",MaHocPhan="ATTT103",TenHocPhan="Toán mã hóa",SoTinChi=3,HocKyDeXuat=1,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT04",MaHocPhan="ATTT201",TenHocPhan="Mật mã học",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT05",MaHocPhan="ATTT202",TenHocPhan="Bảo mật mạng",SoTinChi=3,HocKyDeXuat=2,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT06",MaHocPhan="ATTT301",TenHocPhan="Phân tích mã độc",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT07",MaHocPhan="ATTT302",TenHocPhan="Pentest",SoTinChi=3,HocKyDeXuat=3,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT08",MaHocPhan="ATTT303",TenHocPhan="Pháp lý ATTT",SoTinChi=2,HocKyDeXuat=3,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT09",MaHocPhan="ATTT401",TenHocPhan="Bảo mật web",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG05"),
-        HocPhan(IDHocPhan="HP_AT10",MaHocPhan="ATTT402",TenHocPhan="Cloud Security",SoTinChi=3,HocKyDeXuat=4,IDNganh="NG05"),
-    ]
+    # ATTT
+    HocPhan(IDHocPhan="HP_AT01", MaHocPhan="INT12", TenHocPhan="Nhập môn an toàn thông tin", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG05"),
+    HocPhan(IDHocPhan="HP_AT02", MaHocPhan="INT13", TenHocPhan="Lập trình C/C++", SoTinChi=3, HocKyDeXuat=1, IDNganh="NG05"),
+]
 
     db.add_all(hocphan)
+    db.commit()
 
         # ================= ADMINS =================
     admins = [
@@ -144,184 +111,184 @@ def seed():
     bangdiem = [
 
     # SV001
-    BangDiem(ma_sv="SV001",ma_hp="INT1155",diem_qt=8.5,diem_gk=7.5,diem_ck=8.0,diem_tk=8.0,diem_chu="B"),
-    BangDiem(ma_sv="SV001",ma_hp="INT1306",diem_qt=7.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV001",ma_hp="INT1310",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
-    BangDiem(ma_sv="SV001",ma_hp="INT1154",diem_qt=8.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV001",ma_hp="INT3",diem_qt=8.5,diem_gk=7.5,diem_ck=8.0,diem_tk=8.0,diem_chu="B"),
+    BangDiem(ma_sv="SV001",ma_hp="INT7",diem_qt=7.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV001",ma_hp="INT13",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV001",ma_hp="INT11",diem_qt=8.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
 
     # SV002
-    BangDiem(ma_sv="SV002",ma_hp="INT1155",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C"),
-    BangDiem(ma_sv="SV002",ma_hp="INT1306",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV002",ma_hp="INT1310",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV002",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV002",ma_hp="INT11",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C"),
+    BangDiem(ma_sv="SV002",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV002",ma_hp="INT1",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV002",ma_hp="INT2",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
 
     # SV003
-    BangDiem(ma_sv="SV003",ma_hp="INT1155",diem_qt=9.0,diem_gk=9.0,diem_ck=8.5,diem_tk=8.8,diem_chu="A"),
-    BangDiem(ma_sv="SV003",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV003",ma_hp="INT1310",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV003",ma_hp="INT1154",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV003",ma_hp="INT11",diem_qt=9.0,diem_gk=9.0,diem_ck=8.5,diem_tk=8.8,diem_chu="A"),
+    BangDiem(ma_sv="SV003",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV003",ma_hp="INT2",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV003",ma_hp="INT1",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
 
     # SV004
-    BangDiem(ma_sv="SV004",ma_hp="INT1155",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
-    BangDiem(ma_sv="SV004",ma_hp="INT1306",diem_qt=7.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV004",ma_hp="INT1310",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV004",ma_hp="INT1154",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV004",ma_hp="INT11",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
+    BangDiem(ma_sv="SV004",ma_hp="INT13",diem_qt=7.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV004",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV004",ma_hp="INT11",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
 
     # SV005
-    BangDiem(ma_sv="SV005",ma_hp="INT1155",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV005",ma_hp="INT1306",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV005",ma_hp="INT1310",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
-    BangDiem(ma_sv="SV005",ma_hp="INT1154",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV005",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV005",ma_hp="INT13",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV005",ma_hp="INT13",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV005",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
 
     # SV006
-    BangDiem(ma_sv="SV006",ma_hp="INT1155",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV006",ma_hp="INT1306",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV006",ma_hp="INT1310",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
-    BangDiem(ma_sv="SV006",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV006",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV006",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV006",ma_hp="INT13",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV006",ma_hp="INT11",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
 
     # SV007
-    BangDiem(ma_sv="SV007",ma_hp="INT1155",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
-    BangDiem(ma_sv="SV007",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV007",ma_hp="INT1310",diem_qt=7.5,diem_gk=8.0,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV007",ma_hp="INT1154",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV007",ma_hp="INT11",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV007",ma_hp="INT13",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV007",ma_hp="INT13",diem_qt=7.5,diem_gk=8.0,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV007",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
 
     # SV008
-    BangDiem(ma_sv="SV008",ma_hp="INT1155",diem_qt=6.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.5,diem_chu="C"),
-    BangDiem(ma_sv="SV008",ma_hp="INT1306",diem_qt=7.0,diem_gk=7.5,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
-    BangDiem(ma_sv="SV008",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV008",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.0,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV008",ma_hp="INT11",diem_qt=6.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.5,diem_chu="C"),
+    BangDiem(ma_sv="SV008",ma_hp="INT13",diem_qt=7.0,diem_gk=7.5,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV008",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV008",ma_hp="INT11",diem_qt=7.5,diem_gk=7.0,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
 
     # SV009
-    BangDiem(ma_sv="SV009",ma_hp="INT1155",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV009",ma_hp="INT1306",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV009",ma_hp="INT1310",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV009",ma_hp="INT1154",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV009",ma_hp="INT11",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV009",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV009",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV009",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
 
     # SV010
-    BangDiem(ma_sv="SV010",ma_hp="INT1155",diem_qt=9.5,diem_gk=9.0,diem_ck=9.0,diem_tk=9.2,diem_chu="A"),
-    BangDiem(ma_sv="SV010",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
-    BangDiem(ma_sv="SV010",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV010",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV010",ma_hp="INT11",diem_qt=9.5,diem_gk=9.0,diem_ck=9.0,diem_tk=9.2,diem_chu="A"),
+    BangDiem(ma_sv="SV010",ma_hp="INT13",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
+    BangDiem(ma_sv="SV010",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV010",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
 
     # SV011
-    BangDiem(ma_sv="SV011",ma_hp="INT1155",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV011",ma_hp="INT1306",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV011",ma_hp="INT1310",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV011",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV011",ma_hp="INT11",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV011",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV011",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV011",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
 
     # SV012
-    BangDiem(ma_sv="SV012",ma_hp="INT1155",diem_qt=6.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.5,diem_chu="C"),
-    BangDiem(ma_sv="SV012",ma_hp="INT1306",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV012",ma_hp="INT1310",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV012",ma_hp="INT1154",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
+    BangDiem(ma_sv="SV012",ma_hp="INT11",diem_qt=6.0,diem_gk=6.5,diem_ck=7.0,diem_tk=6.5,diem_chu="C"),
+    BangDiem(ma_sv="SV012",ma_hp="INT13",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV012",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV012",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
 
     # SV013
-    BangDiem(ma_sv="SV013",ma_hp="INT1155",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
-    BangDiem(ma_sv="SV013",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV013",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV013",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV013",ma_hp="INT11",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV013",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV013",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV013",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
 
     # SV014
-    BangDiem(ma_sv="SV014",ma_hp="INT1155",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
-    BangDiem(ma_sv="SV014",ma_hp="INT1306",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV014",ma_hp="INT1310",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV014",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV014",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
+    BangDiem(ma_sv="SV014",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV014",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV014",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
 
     # SV015
-    BangDiem(ma_sv="SV015",ma_hp="INT1155",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV015",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV015",ma_hp="INT1310",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV015",ma_hp="INT1154",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV015",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV015",ma_hp="INT13",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV015",ma_hp="INT13",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV015",ma_hp="INT11",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
 
     # SV016
-    BangDiem(ma_sv="SV016",ma_hp="INT1155",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
-    BangDiem(ma_sv="SV016",ma_hp="INT1306",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV016",ma_hp="INT1310",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV016",ma_hp="INT1154",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
+    BangDiem(ma_sv="SV016",ma_hp="INT11",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
+    BangDiem(ma_sv="SV016",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV016",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV016",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
 
     # SV017
-    BangDiem(ma_sv="SV017",ma_hp="INT1155",diem_qt=9.0,diem_gk=9.0,diem_ck=8.5,diem_tk=8.8,diem_chu="A"),
-    BangDiem(ma_sv="SV017",ma_hp="INT1306",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV017",ma_hp="INT1310",diem_qt=7.5,diem_gk=8.0,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV017",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV017",ma_hp="INT11",diem_qt=9.0,diem_gk=9.0,diem_ck=8.5,diem_tk=8.8,diem_chu="A"),
+    BangDiem(ma_sv="SV017",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV017",ma_hp="INT13",diem_qt=7.5,diem_gk=8.0,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV017",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
 
     # SV018
-    BangDiem(ma_sv="SV018",ma_hp="INT1155",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
-    BangDiem(ma_sv="SV018",ma_hp="INT1306",diem_qt=6.5,diem_gk=7.0,diem_ck=6.5,diem_tk=6.7,diem_chu="C+"),
-    BangDiem(ma_sv="SV018",ma_hp="INT1310",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV018",ma_hp="INT1154",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV018",ma_hp="INT11",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
+    BangDiem(ma_sv="SV018",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=6.5,diem_tk=6.7,diem_chu="C+"),
+    BangDiem(ma_sv="SV018",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV018",ma_hp="INT11",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
 
     # SV019
-    BangDiem(ma_sv="SV019",ma_hp="INT1155",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV019",ma_hp="INT1306",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV019",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV019",ma_hp="INT1154",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV019",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.0,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV019",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV019",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV019",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
 
     # SV020
-    BangDiem(ma_sv="SV020",ma_hp="INT1155",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV020",ma_hp="INT1306",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV020",ma_hp="INT1310",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV020",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV020",ma_hp="INT11",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV020",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV020",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV020",ma_hp="INT11",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
 
     # SV021
-    BangDiem(ma_sv="SV021",ma_hp="INT1155",diem_qt=9.0,diem_gk=8.5,diem_ck=9.0,diem_tk=8.8,diem_chu="A"),
-    BangDiem(ma_sv="SV021",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV021",ma_hp="INT1310",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV021",ma_hp="INT1154",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV021",ma_hp="INT11",diem_qt=9.0,diem_gk=8.5,diem_ck=9.0,diem_tk=8.8,diem_chu="A"),
+    BangDiem(ma_sv="SV021",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV021",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=8.0,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV021",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
 
     # SV022
-    BangDiem(ma_sv="SV022",ma_hp="INT1155",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV022",ma_hp="INT1306",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
-    BangDiem(ma_sv="SV022",ma_hp="INT1310",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
-    BangDiem(ma_sv="SV022",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV022",ma_hp="INT11",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV022",ma_hp="INT13",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV022",ma_hp="INT13",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV022",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
 
     # SV023
-    BangDiem(ma_sv="SV023",ma_hp="INT1155",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV023",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
-    BangDiem(ma_sv="SV023",ma_hp="INT1310",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV023",ma_hp="INT1154",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV023",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV023",ma_hp="INT13",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
+    BangDiem(ma_sv="SV023",ma_hp="INT13",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV023",ma_hp="INT11",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
 
     # SV024
-    BangDiem(ma_sv="SV024",ma_hp="INT1155",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
-    BangDiem(ma_sv="SV024",ma_hp="INT1306",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
-    BangDiem(ma_sv="SV024",ma_hp="INT1310",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV024",ma_hp="INT1154",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
+    BangDiem(ma_sv="SV024",ma_hp="INT11",diem_qt=5.5,diem_gk=6.0,diem_ck=6.5,diem_tk=6.0,diem_chu="C"),
+    BangDiem(ma_sv="SV024",ma_hp="INT13",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
+    BangDiem(ma_sv="SV024",ma_hp="INT13",diem_qt=7.5,diem_gk=7.0,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV024",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.0,diem_tk=7.0,diem_chu="B"),
 
     # SV025
-    BangDiem(ma_sv="SV025",ma_hp="INT1155",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV025",ma_hp="INT1306",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV025",ma_hp="INT1310",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
-    BangDiem(ma_sv="SV025",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV025",ma_hp="INT11",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV025",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV025",ma_hp="INT13",diem_qt=9.0,diem_gk=8.5,diem_ck=8.5,diem_tk=8.7,diem_chu="A"),
+    BangDiem(ma_sv="SV025",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
 
     # SV026
-    BangDiem(ma_sv="SV026",ma_hp="INT1155",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
-    BangDiem(ma_sv="SV026",ma_hp="INT1306",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV026",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV026",ma_hp="INT1154",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV026",ma_hp="INT11",diem_qt=7.0,diem_gk=7.0,diem_ck=7.5,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV026",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV026",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=7.5,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV026",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.0,diem_tk=7.3,diem_chu="B"),
 
     # SV027
-    BangDiem(ma_sv="SV027",ma_hp="INT1155",diem_qt=9.0,diem_gk=9.0,diem_ck=9.0,diem_tk=9.0,diem_chu="A"),
-    BangDiem(ma_sv="SV027",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
-    BangDiem(ma_sv="SV027",ma_hp="INT1310",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
-    BangDiem(ma_sv="SV027",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV027",ma_hp="INT11",diem_qt=9.0,diem_gk=9.0,diem_ck=9.0,diem_tk=9.0,diem_chu="A"),
+    BangDiem(ma_sv="SV027",ma_hp="INT13",diem_qt=8.5,diem_gk=8.5,diem_ck=8.5,diem_tk=8.5,diem_chu="A"),
+    BangDiem(ma_sv="SV027",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.5,diem_tk=8.2,diem_chu="B+"),
+    BangDiem(ma_sv="SV027",ma_hp="INT11",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
 
     # SV028
-    BangDiem(ma_sv="SV028",ma_hp="INT1155",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
-    BangDiem(ma_sv="SV028",ma_hp="INT1306",diem_qt=7.0,diem_gk=7.5,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
-    BangDiem(ma_sv="SV028",ma_hp="INT1310",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV028",ma_hp="INT1154",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
+    BangDiem(ma_sv="SV028",ma_hp="INT11",diem_qt=6.5,diem_gk=6.5,diem_ck=7.0,diem_tk=6.7,diem_chu="C+"),
+    BangDiem(ma_sv="SV028",ma_hp="INT13",diem_qt=7.0,diem_gk=7.5,diem_ck=7.0,diem_tk=7.2,diem_chu="B"),
+    BangDiem(ma_sv="SV028",ma_hp="INT13",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV028",ma_hp="INT11",diem_qt=8.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.7,diem_chu="B"),
 
     # SV029
-    BangDiem(ma_sv="SV029",ma_hp="INT1155",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
-    BangDiem(ma_sv="SV029",ma_hp="INT1306",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
-    BangDiem(ma_sv="SV029",ma_hp="INT1310",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
-    BangDiem(ma_sv="SV029",ma_hp="INT1154",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV029",ma_hp="INT11",diem_qt=8.0,diem_gk=7.5,diem_ck=8.0,diem_tk=7.8,diem_chu="B"),
+    BangDiem(ma_sv="SV029",ma_hp="INT13",diem_qt=8.5,diem_gk=8.0,diem_ck=8.5,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV029",ma_hp="INT13",diem_qt=7.0,diem_gk=7.5,diem_ck=7.5,diem_tk=7.3,diem_chu="B"),
+    BangDiem(ma_sv="SV029",ma_hp="INT11",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
 
     # SV030
-    BangDiem(ma_sv="SV030",ma_hp="INT1155",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
-    BangDiem(ma_sv="SV030",ma_hp="INT1306",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
-    BangDiem(ma_sv="SV030",ma_hp="INT1310",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
-    BangDiem(ma_sv="SV030",ma_hp="INT1154",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
+    BangDiem(ma_sv="SV030",ma_hp="INT11",diem_qt=7.5,diem_gk=7.5,diem_ck=7.5,diem_tk=7.5,diem_chu="B"),
+    BangDiem(ma_sv="SV030",ma_hp="INT13",diem_qt=8.0,diem_gk=8.0,diem_ck=8.0,diem_tk=8.0,diem_chu="B+"),
+    BangDiem(ma_sv="SV030",ma_hp="INT13",diem_qt=6.5,diem_gk=7.0,diem_ck=7.0,diem_tk=6.8,diem_chu="C+"),
+    BangDiem(ma_sv="SV030",ma_hp="INT11",diem_qt=8.5,diem_gk=8.5,diem_ck=8.0,diem_tk=8.3,diem_chu="B+"),
 
     ]
     
